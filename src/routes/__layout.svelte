@@ -1,7 +1,20 @@
 <script>
 	import '../app.css';
+	import Header from '$lib/Header/index.svelte';
+	import Footer from '$lib/Footer/index.svelte';
+	import Container from '$lib/Container/index.svelte';
 </script>
 
-<main>
-	<slot />
-</main>
+<Container>
+	<Header />
+	<main class="px-12 lg:px-48 w-full">
+		<slot />
+	</main>
+	<Footer />
+</Container>
+
+<style>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+</style>
