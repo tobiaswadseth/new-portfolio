@@ -17,6 +17,6 @@ export const handle = async ({ request, render }) => {
 		// set a cookie so that we recognise them when they return
 		response.headers['set-cookie'] = `userid=${request.locals.userid}; Path=/; HttpOnly`;
 	}
-
+	// console.log(request.locals.userid);
 	return response;
 };
