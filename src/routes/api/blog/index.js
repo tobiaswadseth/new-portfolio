@@ -1,5 +1,5 @@
-import posts from './_posts.json';
+import { getAll } from './_api.js';
 
-export const get = () => {
-	return { status: 200, body: { posts } };
+export const get = async () => {
+	return { status: 200, body: { posts: getAll() } };
 };

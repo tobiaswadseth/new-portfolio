@@ -1,8 +1,6 @@
 <script context="module">
-	export const load = async ({ page }) => {
+	export const load = async ({ page, fetch }) => {
 		const res = await fetch(`/api/blog/${page.params.id}`);
-
-		console.log('post page');
 
 		if (res.ok) {
 			const post = await res.json();
@@ -24,5 +22,7 @@
 	export let post;
 </script>
 
-<h1>{post.post.title}</h1>
-<div class="">{post.post.content}</div>
+<article class="prose my-6 md:my-0 lg:prose-xl">
+	<h2 class="title">{post.post.title}</h2>
+	<p class="">{post.post.content}</p>
+</article>

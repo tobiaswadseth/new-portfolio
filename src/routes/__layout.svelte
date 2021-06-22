@@ -7,7 +7,7 @@
 
 <Container>
 	<Header />
-	<main class="px-12 lg:px-48 w-full">
+	<main class="px-12 lg:px-48 w-full grid place-items-center">
 		<slot />
 	</main>
 	<Footer />
