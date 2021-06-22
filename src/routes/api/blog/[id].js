@@ -1,9 +1,7 @@
-import posts from './_posts.json';
+import { getById } from './_api.js';
 
-export const get = ({ params }) => {
-	let post = posts.filter((postObj) => {
-		return postObj.id === +params.id;
-	});
+export const get = async ({ params }) => {
+	let post = getById(params.id);
 
 	if (post) {
 		return { status: 200, body: { post: post[0] } };

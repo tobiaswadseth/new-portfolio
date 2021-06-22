@@ -24,8 +24,6 @@
 	import BlogItem from '$lib/BlogItem/index.svelte';
 </script>
 
-<div class="grid place-items-center">
-	{#each posts.posts as post}
-		<BlogItem {...post} />
-	{/each}
-</div>
+{#each posts.posts as post}
+	<BlogItem {...post} />
+{/each}
