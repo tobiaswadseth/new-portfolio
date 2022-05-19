@@ -36,6 +36,7 @@
 		<div class="flex-1 px-2 mx-2">
 			<div class="items-stretch hidden md:flex">
 				<a class="btn btn-ghost btn-sm rounded-btn" sveltekit:prefetch href="/blog"> Blog </a>
+				<a class="btn btn-ghost btn-sm rounded-btn" sveltekit:prefetch href="/resources"> Resources </a>
 				<a class="btn btn-ghost btn-sm rounded-btn" sveltekit:prefetch href="/store"> Store </a>
 			</div>
 		</div>
