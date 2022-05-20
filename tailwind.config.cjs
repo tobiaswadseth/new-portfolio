@@ -1,7 +1,7 @@
 module.exports = {
 	mode: 'jit',
 	purge: ['./src/**/*.svelte'],
-	plugins: [require('daisyui'), require('@tailwindcss/typography')],
+	plugins: [require('@tailwindcss/typography'), require('daisyui')],
 	daisyui: {
 		themes: false
 	}

@@ -24,6 +24,12 @@
 	import ResourceItem from '$lib/ResourceItem/index.svelte';
 </script>
 
-{#each resources.resources as resource}
-	<ResourceItem {...resource} />
-{/each}
+<svelte:head>
+	<title>Resources</title>
+</svelte:head>
+
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+	{#each resources.resources as resource}
+		<ResourceItem {...resource} />
+	{/each}
+</div>

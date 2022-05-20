@@ -1,6 +1,6 @@
 <script context="module">
-	export const load = async ({ page, fetch }) => {
-		const res = await fetch(`/api/blog/${page.params.id}`);
+	export const load = async ({ params, fetch }) => {
+		const res = await fetch(`/api/blog/${params.id}`);
 
 		if (res.ok) {
 			const post = await res.json();
@@ -21,6 +21,10 @@
 <script>
 	export let post;
 </script>
+
+<svelte:head>
+	<title>{post.post.title}</title>
+</svelte:head>
 
 <article class="prose my-6 md:my-0 lg:prose-xl">
 	<h2 class="title">{post.post.title}</h2>

@@ -24,6 +24,12 @@
 	import BlogItem from '$lib/BlogItem/index.svelte';
 </script>
 
-{#each posts.posts as post}
-	<BlogItem {...post} />
-{/each}
+<svelte:head>
+	<title>Blog</title>
+</svelte:head>
+
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+	{#each posts.posts as post}
+		<BlogItem {...post} />
+	{/each}
+</div>

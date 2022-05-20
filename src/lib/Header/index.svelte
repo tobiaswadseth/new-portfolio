@@ -37,11 +37,11 @@
 			<div class="items-stretch hidden md:flex">
 				<a class="btn btn-ghost btn-sm rounded-btn" sveltekit:prefetch href="/blog"> Blog </a>
 				<a class="btn btn-ghost btn-sm rounded-btn" sveltekit:prefetch href="/resources"> Resources </a>
-				<a class="btn btn-ghost btn-sm rounded-btn" sveltekit:prefetch href="/store"> Store </a>
+				<a class="btn btn-ghost btn-sm rounded-btn" sveltekit:prefetch href="/projects"> Projects </a>
 			</div>
 		</div>
 		<!-- TODO: Dropdown -->
-		<div class="flex-none dropdown dropdown-end">
+		<!-- <div class="flex-none dropdown dropdown-end">
 			<div tabindex="0">
 				<div tabindex="0" class="btn btn-ghost btn-md rounded-btn">
 					<svg
@@ -64,7 +64,7 @@
 					<li><a href="/logout"> Logout </a></li>
 				</ul>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </header>
 
