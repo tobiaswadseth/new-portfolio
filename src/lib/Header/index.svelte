@@ -20,10 +20,13 @@
 				</div>
 				<ul class="shadow menu dropdown-content bg-base-200 rounded-box w-52">
 					<li>
-						<a href="/blog">Blog</a>
+						<a href="/blog"> Blog </a>
 					</li>
 					<li>
-						<a href="/store"> Store </a>
+						<a href="/resources"> Resources </a>
+					</li>
+					<li>
+						<a href="/projects"> Projects </a>
 					</li>
 				</ul>
 			</div>
