@@ -11,7 +11,7 @@
         <p><strong>N. B. This is written in {lang}</strong></p>
 		<p>{description}</p>
 		<div class="card-action mt-6">
-			<a class="btn btn-primary" href="/content/{file}" target="blank" rel="external">Read More</a>
+			<a class="btn btn-primary" href="/content/{file}" target="_blank">Read More</a>
 		</div>
 	</div>
 </div>
